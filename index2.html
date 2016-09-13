@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>测试布局</title>
+        <style media="screen">
+        p {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }
+        header{
+            height: 100px;
+            line-height: 100px;
+            background: red;
+        }
+        section {
+            overflow: hidden;
+        }
+        footer{
+            clear: both;
+            height: 100px;
+            line-height: 100px;
+            background: #808080;
+        }
+        .sidebar{
+            float: left;
+            width: 100px;
+            height: 400px;
+            line-height: 400px;
+            background: green;
+        }
+        .nav{
+            overflow: hidden;
+            height: 100px;
+            line-height: 100px;
+            background: #ffa500;
+        }
+        .abs-con {
+            height: 300px;
+            line-height: 300px;
+        }
+        .ads {
+            overflow: hidden;
+            height: 300px;
+            line-height: 300px;
+            background: #ccc;
+        }
+        .conve {
+            float: right;
+            width: 200px;
+            height: 500px;
+            line-height: 500px;
+            background: yellow;
+        }
+        .main {
+            margin-right: 200px;
+            overflow: hidden;
+            height: 200px;
+            line-height: 200px;
+            background: #000;
+        }
+        </style>
+    </head>
+    <body>
+        <div class= "container">
+            <header>
+                <p>header</p>
+            </header>
+            <section>
+                <div class = "sidebar">
+                    <p>sidebar</p>
+                </div>
+                <div class = "nav">
+                    <p>nav</p>
+                </div>
+                <div class="abs-con">
+                    <div class="conve">
+                        <p>conve</p>
+                    </div>
+                    <div class="ads">
+                        <p>ads</p>
+                    </div>
+                </div>
+                <div class="main">
+                    <p>main</p>
+                </div>
+            </section>
+            <footer>
+                <p>footer</p>
+            </footer>
+        </div>
+    </body>
+</html>
